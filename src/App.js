@@ -1,6 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+
+var electron = window.require('electron');
+var currentWindow = electron.remote.getCurrentWindow();
+console.log(currentWindow.drinks);
 
 function App() {
   return (
